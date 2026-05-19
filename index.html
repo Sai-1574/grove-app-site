@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Grove — A habit tracker that grows with you</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Grove is a habit-tracking app with a living-tree metaphor. Build daily habits and watch your grove flourish as you stay consistent." />
+  <meta name="theme-color" content="#0F1F17" />
+
+  <meta property="og:title" content="Grove — A habit tracker that grows with you" />
+  <meta property="og:description" content="Build daily habits. Tend your living grove. Reflect with the journal." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://groveapp.in/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #0F1F17;
+      --surface: #18241C;
+      --accent: #4CAF7D;
+      --accent-soft: rgba(76, 175, 125, 0.18);
+      --text: #F0EDE4;
+      --text-muted: #A8B5AC;
+      --text-dim: #6B7670;
+      --border: rgba(255, 255, 255, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 28px 96px;
+    }
+
+    header.hero {
+      text-align: center;
+      padding: 32px 0 56px;
+    }
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 48px;
+      color: var(--accent);
+      letter-spacing: -0.5px;
+      margin: 0 0 10px;
+    }
+    .tagline {
+      font-size: 18px;
+      color: var(--text-muted);
+      margin: 0 auto;
+      max-width: 480px;
+    }
+
+    section {
+      margin: 48px 0;
+    }
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 26px;
+      color: var(--text);
+      margin: 0 0 18px;
+      letter-spacing: -0.2px;
+    }
+    p { color: var(--text-muted); margin: 0 0 14px; }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 6px;
+    }
+    .feature {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 22px;
+    }
+    .feature h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--text);
+      margin: 0 0 6px;
+    }
+    .feature p {
+      font-size: 14px;
+      margin: 0;
+      color: var(--text-muted);
+    }
+    @media (min-width: 620px) {
+      .features { grid-template-columns: 1fr 1fr; }
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+    }
+    .pill.primary {
+      background: var(--accent);
+      color: var(--bg);
+      border-color: var(--accent);
+    }
+
+    footer {
+      margin-top: 72px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-dim);
+      text-align: center;
+    }
+    footer a { color: var(--text-muted); }
+    footer .links {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1 class="logo">Grove</h1>
+      <p class="tagline">A habit tracker that grows with you. Build daily habits, tend your living grove, reflect with the journal.</p>
+    </header>
+
+    <section>
+      <h2>What it does</h2>
+      <p>Grove turns the slow, invisible work of building habits into something you can see. Each habit you keep up nourishes a tree on your home screen. Skip too many days and it wilts. Stay consistent and it thrives.</p>
+
+      <div class="features">
+        <div class="feature">
+          <h3>Living grove</h3>
+          <p>An animated tree reflects your habit health across five stages — Thriving, Fading, Wilting, Deteriorating, Dead.</p>
+        </div>
+        <div class="feature">
+          <h3>Daily, multi-count, and weekly habits</h3>
+          <p>Simple toggles for daily habits. Counters for "drink 3 glasses". Weekly targets for "exercise 4 days a week".</p>
+        </div>
+        <div class="feature">
+          <h3>Journal with photos &amp; voice notes</h3>
+          <p>Log how you feel, attach a photo or a quick voice note. Every entry is auto-tagged with your grove's health that day.</p>
+        </div>
+        <div class="feature">
+          <h3>Streak insurance</h3>
+          <p>Travelling, sick, or just had a rough day? Mark a day skipped so your grove pauses instead of withering.</p>
+        </div>
+        <div class="feature">
+          <h3>Insights</h3>
+          <p>See your best days, peak hours, longest streaks, and which habits influence each other most.</p>
+        </div>
+        <div class="feature">
+          <h3>Private by default</h3>
+          <p>Everything stays on your device. Optional Google Drive backup uses a hidden app folder no one else can see — not even Grove can read your other Drive files.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Get Grove</h2>
+      <p>Grove is in active development. The Android app is currently in closed testing — public launch on the Play Store coming soon.</p>
+      <div class="pill-row">
+        <span class="pill">Android · Play Store (soon)</span>
+        <a href="mailto:saiveshwa15@gmail.com" class="pill primary">Get in touch</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="mailto:saiveshwa15@gmail.com">Contact</a>
+      </div>
+      <div>© 2026 Grove. Made by an independent developer in India.</div>
+    </footer>
+  </div>
+</body>
+</html>
