@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Delete Your Data · Treeak</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="How to delete your Treeak data from your device, your Google Drive, and request a data deletion from the developer." />
+  <meta name="theme-color" content="#0F1F17" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #0F1F17;
+      --surface: #18241C;
+      --accent: #4CAF7D;
+      --text: #F0EDE4;
+      --text-muted: #A8B5AC;
+      --text-dim: #6B7670;
+      --border: rgba(255, 255, 255, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 28px 88px;
+    }
+
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+    .back:hover { color: var(--accent); text-decoration: none; }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 36px;
+      color: var(--accent);
+      margin: 0 0 6px;
+      letter-spacing: -0.4px;
+    }
+    .meta {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin: 0 0 36px;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      color: var(--text);
+      margin: 44px 0 14px;
+      letter-spacing: -0.2px;
+      scroll-margin-top: 20px;
+    }
+    h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--text);
+      margin: 28px 0 10px;
+      letter-spacing: 0.1px;
+    }
+
+    p, li {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+    p { margin: 0 0 14px; }
+    ul, ol { padding-left: 22px; margin: 0 0 18px; }
+    li { margin-bottom: 8px; }
+    strong { color: var(--text); font-weight: 500; }
+    em { color: var(--text); font-style: italic; }
+
+    code, .mono {
+      font-family: 'SF Mono', 'Cascadia Mono', Consolas, monospace;
+      font-size: 13px;
+      color: var(--text);
+      background: var(--surface);
+      padding: 1px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    .summary {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin: 0 0 28px;
+      font-size: 14.5px;
+    }
+    .summary p:last-child { margin-bottom: 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 22px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      background: var(--surface);
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 72px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-dim);
+      text-align: center;
+    }
+    footer a { color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a href="/" class="back">&larr; Back to Treeak</a>
+
+    <h1>Delete Your Data</h1>
+    <p class="meta">Last updated May 27, 2026</p>
+
+    <div class="summary">
+      <p><strong>Treeak</strong> is a local-first habit tracker. Most of your data never leaves your device. This page explains the three places your data can live and how to delete each one.</p>
+      <p>If you cannot complete the steps below yourself (for example, you no longer have access to the device), you can email the developer at <a href="mailto:saiveshwa15@gmail.com">saiveshwa15@gmail.com</a> with a deletion request. Acknowledgement within 7 days; resolution within 30 days.</p>
+    </div>
+
+    <h2>1. Data on your device (always present)</h2>
+
+    <p>Every habit, completion tap, journal entry, photo, voice note, mood rating, and theme preference is stored locally on your phone using Android's app-private storage. None of it is sent to any server we control.</p>
+
+    <h3>Option A &mdash; Clear in-app (recommended if you still want to keep the app installed)</h3>
+    <ol>
+      <li>Open Treeak.</li>
+      <li>Go to <strong>Settings</strong> (the gear tab at the far right of the bottom bar).</li>
+      <li>If you have connected Google Drive, scroll to the <strong>Sync</strong> section and tap <strong>Disconnect</strong>. Choose <strong>"Disconnect and clear my data."</strong> This wipes every habit, journal entry, photo, and voice note on the device.</li>
+      <li>If you have not connected Drive, your only on-device clear option is to uninstall (Option B) or use Android's app storage controls (Option C).</li>
+    </ol>
+
+    <h3>Option B &mdash; Uninstall the app</h3>
+    <p>Uninstalling Treeak from your phone deletes every byte of local data the app holds. Long-press the Treeak icon on your home screen and choose <strong>Uninstall</strong>, or go to Android <strong>Settings &rsaquo; Apps &rsaquo; Treeak &rsaquo; Uninstall</strong>.</p>
+
+    <h3>Option C &mdash; Clear app storage from Android settings</h3>
+    <p>If you want to wipe data without uninstalling: Android <strong>Settings &rsaquo; Apps &rsaquo; Treeak &rsaquo; Storage &amp; cache &rsaquo; Clear storage</strong>. This is equivalent to a fresh install &mdash; all habits, journal entries, and preferences are removed.</p>
+
+    <h2>2. Data in your Google Drive (only if you connected Drive)</h2>
+
+    <p>If you connected Google Drive for backup, Treeak stores encrypted snapshots and journal media in a <strong>hidden, app-private folder</strong> on your own Drive. You can read this folder only with Treeak; it is not visible in the regular Drive UI. The data has never left your Google account.</p>
+
+    <h3>Option A &mdash; Delete from inside the app</h3>
+    <p>The fastest way:</p>
+    <ol>
+      <li>Open Treeak <strong>&rsaquo; Settings &rsaquo; Sync</strong>.</li>
+      <li>Tap <strong>Disconnect</strong> and choose <strong>"Disconnect and clear my data."</strong></li>
+      <li>This severs the connection on this device. To also remove the hidden Drive folder, continue with Option B.</li>
+    </ol>
+
+    <h3>Option B &mdash; Remove Treeak's hidden Drive data directly</h3>
+    <ol>
+      <li>Visit <a href="https://drive.google.com" target="_blank" rel="noopener">drive.google.com</a> in a browser and sign in.</li>
+      <li>Click the gear icon in the top right and choose <strong>Settings</strong>.</li>
+      <li>In the left sidebar, choose <strong>Manage apps</strong>.</li>
+      <li>Find <strong>Treeak</strong> in the list of connected apps.</li>
+      <li>Click <strong>Options</strong> &rsaquo; <strong>Delete hidden app data</strong>. Confirm.</li>
+    </ol>
+    <p>This permanently deletes every backup snapshot and journal photo or voice note Treeak ever wrote to your Drive. The Drive deletion is irreversible.</p>
+
+    <h3>Option C &mdash; Revoke the authorization entirely</h3>
+    <ol>
+      <li>Visit <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+      <li>Find <strong>Treeak</strong> and click <strong>Remove access</strong>.</li>
+    </ol>
+    <p>This invalidates Treeak's refresh token so the app can no longer reach your Drive. Combine with Option B to also delete the hidden folder.</p>
+
+    <h2>3. Data held by RevenueCat (purchases only)</h2>
+
+    <p>When you buy Treeak Premium on Google Play, our payments partner <strong>RevenueCat</strong> receives an anonymized purchase token from the Play Store so it can verify your subscription is active. They do not receive your email, name, or any in-app content. The anonymized identifier they assign you takes the form <code>$RCAnonymousID:&lt;random&gt;</code>.</p>
+
+    <p>RevenueCat retains a minimal purchase record for finance-and-refund processing for the period required by their data retention policy. To request deletion of your RevenueCat record, email <a href="mailto:saiveshwa15@gmail.com">saiveshwa15@gmail.com</a> with the subject line "RevenueCat record deletion" and your Google Play order ID (visible in Play Store &rsaquo; Payments &amp; subscriptions &rsaquo; Budget &amp; history). Acknowledgement within 7 days; resolution within 30 days.</p>
+
+    <h2>What gets deleted</h2>
+
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Where it lives</th><th>Deleted by</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Habits, completions, sub-habits, streaks, skips, pauses</td><td>Your device</td><td>Uninstall &middot; Clear storage &middot; Settings &rsaquo; Disconnect &amp; clear</td></tr>
+        <tr><td>Journal entries (text, mood)</td><td>Your device + your Drive (if connected)</td><td>Uninstall + Drive &rsaquo; Manage apps &rsaquo; Delete hidden app data</td></tr>
+        <tr><td>Journal photos and voice notes</td><td>Your device + your Drive (if connected)</td><td>Same as above</td></tr>
+        <tr><td>Display name, theme, app preferences, milestone unlocks</td><td>Your device</td><td>Uninstall &middot; Clear storage</td></tr>
+        <tr><td>Google email address</td><td>Stored on device only while Drive is connected</td><td>Settings &rsaquo; Disconnect</td></tr>
+        <tr><td>OAuth tokens (Drive access)</td><td>Android Keystore on your device</td><td>Settings &rsaquo; Disconnect, or Google permissions revoke</td></tr>
+        <tr><td>Anonymized RevenueCat purchase record</td><td>RevenueCat's servers</td><td>Email request to the developer</td></tr>
+      </tbody>
+    </table>
+
+    <h2>What is kept after deletion</h2>
+
+    <p>Once you complete the steps above, <strong>nothing</strong> of yours remains on your device. The hidden Drive folder is deleted at Google's normal pace once you trigger "Delete hidden app data."</p>
+
+    <p>Treeak does not maintain server-side backups, analytics, telemetry, or any other copy of your data. There is nothing else for the developer to delete on your behalf, except the RevenueCat purchase record described in Section 3 above.</p>
+
+    <h2>Contact</h2>
+
+    <p>Sai Veshwa, Developer of Treeak<br />
+    Email: <a href="mailto:saiveshwa15@gmail.com">saiveshwa15@gmail.com</a><br />
+    Acting as the Grievance Officer under India's Digital Personal Data Protection Act, 2023.</p>
+
+    <p>See also: <a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Service</a></p>
+
+    <footer>
+      <p>Treeak &middot; Made by Sai Veshwa</p>
+    </footer>
+  </div>
+</body>
+</html>
